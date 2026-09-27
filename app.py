@@ -27,6 +27,21 @@ def handle_caesar(ack, respond, command):
     result = caesar(shift, message)
     respond(result)
 
+
+def handle_rot13(ack, respond, command):
+    ack()
+    text = command.get("text", "").strip()
+    if not text: # "" == false, "text here" == true
+        respond("Use: /rot13 <message>  e.g. /rot13 hello")
+        return
+    parts = text.split(" ", 1) #rsplit for from right side
+    if len(parts) < 2:
+        respond("Use: /rot13 <message>  e.g. /rot13 hello")
+        return
+    message = parts[1]
+    result = caesar(13, message)
+
+
 if __name__ == "__main__": # for testing, if it's not running this specific file (__main__, app.py), then it wont handler.start() or else it's never gonna give you up, no i mean, it's going to hang there and not stop
     handler = SocketModeHandler(app, os.environ["SLACK_APP_TOKEN"])
     handler.start()
