@@ -1,7 +1,7 @@
 # A~Z: 65~90
 # a~z: 97~122
 
-def caesar(text:str, shift:int) -> str:
+def caesar(shift:int, text:str) -> str:
     after = ""
     for char in text:
         if not 65<=ord(char)<=90 and not 97<=ord(char)<=122:
@@ -17,5 +17,5 @@ def caesar(text:str, shift:int) -> str:
 
 
 # test
-# t = caesar("Hello!", 3)
+# t = caesar(3 , "Hello!")
 # print(t)
