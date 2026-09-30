@@ -1,6 +1,7 @@
 # Julius-Ceasar
 
 > Of course you'll want a bot that can help you encode your text mid-chat right? (???)
+> and I typed almost everything, only ai was used in app.py, mostly plain assist, only roughly 5 lines of code written by AI, wdym 30% written by AI TAT
 
 A Slack bot for encrypting and encoding stuff. Why? Well so that I can send text encoded for no reason. Typo for the name is definitely intended.
 ## Preview
@@ -53,7 +54,7 @@ Rome wasn't built in a day, same for this bot, however setting it up can be in a
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file with your Slack tokens (shhh, secret — it's already in `.gitignore` so Brutus can't steal it (????, I'm spitting nonsense atp)):
+3. Create a `.env` file with your Slack tokens:
    ```
    SLACK_BOT_TOKEN=xoxb-...
    SLACK_APP_TOKEN=xapp-...
@@ -67,7 +68,7 @@ Rome wasn't built in a day, same for this bot, however setting it up can be in a
    ```
 
 ## Project Structure
-
+okay this part was by AI, how do i even draw this tbh 
 ```
 .
 ├── app.py             # The Emperor himself — Slack handlers live here
@@ -77,11 +78,3 @@ Rome wasn't built in a day, same for this bot, however setting it up can be in a
 ├── requirements.txt   # Provisions for the journey
 └── .env               # Secrets (you supply this, keep it hidden)
 ```
-
-## Et tu, Contributor?
-
-Found a bug? Stab it 23 times and open a PR. All citizens are welcome.
-
-Ave! 🍇
-
-(Seriously, wtf is wrong with me)
