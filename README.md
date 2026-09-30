@@ -3,6 +3,8 @@
 > Of course you'll want a bot that can help you encode your text mid-chat right? (???)
 
 A Slack bot for encrypting and encoding stuff. Why? Well so that I can send text encoded for no reason. Typo for the name is definitely intended.
+## Preview
+![Preview, if doesnt work, stardance might have taken it down or been taken down](https://stardance.hackclub.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDY5NzM5LCJwdXIiOiJibG9iX2lkIn19--39ee67d81fc824def1a1b7d526c61a50d204cf3f/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTYwMCw5MDBdLCJzYXZlciI6eyJzdHJpcCI6dHJ1ZSwicXVhbGl0eSI6NzV9fSwicHVyIjoidmFyaWF0aW9uIn19--5394ecd620f1b8ee9be71be3f37cd22b8a88953c/image.png)
 
 
 ## What can it do? (For now, only 3 commands, more in future, feel free to contribute!!!)
