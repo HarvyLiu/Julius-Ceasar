@@ -1,0 +1,9 @@
+*Julius Ceasar* encrypt anything! (Not everything for now tho)
+
+/caesar <shift> <message> -- e.g. /caesar 3 hello → khoor
+
+/rot13 <message> -- e.g. /rot13 hello → uryyb
+
+/base64 <encode/decode> <message> -- e.g. /base64 encode hi
+
+/ceasar-help -- this message (I mean you typed this so I don't think I need this here, but just in case)

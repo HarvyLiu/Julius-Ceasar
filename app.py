@@ -4,7 +4,8 @@ from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 from ciphers.caesar import caesar
 from ciphers.b64 import b64_encode, b64_decode
-
+from pathlib import Path
+HELPtxt = Path(__file__).parent.joinpath("help.txt").read_text(encoding="utf-8") #Ai wrote this path
 
 load_dotenv()
 app = App(token=os.environ["SLACK_BOT_TOKEN"])
@@ -49,20 +50,26 @@ def handle_base64(ack, respond, command):
         return
     parts = text.split(" ", 1)
     if len(parts) < 2:
-        respond("Use: /base64 <encode|decode> <message> e.g. /base64 encode hello")
+        respond("Use: /base64 <encode/decode> <message> e.g. /base64 encode hello")
         return
-
-    action, message = parts[0].lower(), parts[1]
     
-    if action == "encode":
-        respond(b64_encode(message))
-    elif action == "decode":
+    if parts[0].lower() == "encode":
+        respond(b64_encode(parts[1]))
+    elif parts[0].lower() == "decode":
         try:
-            respond(b64_decode(message))
+            respond(b64_decode(parts[1]))
         except Exception:
             respond("Invalid base64. Try /base64 decode aGVsbG8=")
     else:
-        respond("Use: /base64 <encode|decode> <message> e.g. /base64 encode hello")
+        respond("Use: /base64 <encode/decode> <message> e.g. /base64 encode hello")
+
+@app.command("/ceasar-help")
+def handle_ceasarhelp(ack, respond, command):
+    ack()
+    respond(HELPtxt)
+
+
+
 
 
 if __name__ == "__main__": # for testing, if it's not running this specific file (__main__, app.py), then it wont handler.start() or else it's never gonna give you up, no i mean, it's going to hang there and not stop
