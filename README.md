@@ -1,7 +1,7 @@
 # Julius-Ceasar
 
 > Of course you'll want a bot that can help you encode your text mid-chat right? (???)
-> and I typed almost everything, only ai was used in app.py, mostly plain assist, only roughly 5 lines of code written by AI, wdym 30% written by AI TAT
+> AI declaration: I typed almost everything, only ai was used in app.py, mostly plain assist, only roughly 5 lines of code written by AI
 
 A Slack bot for encrypting and encoding stuff. Why? Well so that I can send text encoded for no reason. Typo for the name is definitely intended.
 ## Preview
